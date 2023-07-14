@@ -18,28 +18,3 @@ history will be repeatedly rewritten, making merges impossible. If you do want t
 me know in advance so I can notify you of history rewrites.
 
 For further documentation, check out the [wiki].
-
-## Branches
-
-* `master`: (status: **stable**, last update: **2023-03-16**) Base branch. This branch contains a slightly modified
-  version of Pokémon Crystal, with some quality-of-life improvements intended to make development easier. These
-  improvements have been taken from the documentation in the [main disassembly repository][pokecrystal]. This branch
-  contains no 16-bit features and it is only intended as a reference.
-* `base-components`: (status: **stable**, last update: **2023-03-16**) This branch defines the basic components that
-  will comprise the 16-bit index table system, on top of which the remaining branches will be built. Since it only
-  defines macros (and a handful of WRAM locations to be shared by all index tables), it should build the same ROM as
-  `master`.
-* `expand-mon-ID`: (status: **stable**, last update: **2023-03-16**) This branch implements 16-bit indexes for Pokémon
-  species, thus allowing more than 253 species to be included in a single game.
-* `expand-move-ID`: (status: **stable**, last update: **2023-03-16**) This branch implements 16-bit indexes for moves,
-  on top of the existing 16-bit support for Pokémon species from the previous branch. (Interaction between the
-  branches is kept to a minimum, though.)
-* `newbox`: (status: **experimental**, last update: **2023-03-16**) This branch ports Rangi & FIQ's "newbox" from
-  Polished Crystal. Newbox is a complete overhaul to Bill's PC, and this branch ports the functionality on
-  top of the previous branches.
-* `pokecrystal`: (status: **N/A**, last update **2023-03-16**) This branch contains pret's vanilla pokecrystal and
-  should only be used to compare with the previous branches to view pokecrystal16 changes. **DO NOT USE THIS BRANCH!**
-
-To view the differences between any two branches (or any two commits in the repository), you can use GitHub's [tree
-comparison][compare] tool.
-ecrystal16/wiki
