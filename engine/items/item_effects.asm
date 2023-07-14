@@ -55,8 +55,8 @@ ItemEffects:
 	dw ReviveEffect        ; REVIVE
 	dw ReviveEffect        ; MAX_REVIVE
 	dw GuardSpecEffect     ; GUARD_SPEC
-	dw SuperRepelEffect    ; SUPER_REPEL
-	dw MaxRepelEffect      ; MAX_REPEL
+	dw NoEffect   				 ; SUPER_REPEL
+	dw NoEffect     		   ; MAX_REPEL
 	dw DireHitEffect       ; DIRE_HIT
 	dw NoEffect            ; ITEM_2D
 	dw RestoreHPEffect     ; FRESH_WATER
@@ -2055,29 +2055,28 @@ EscapeRopeEffect:
 	call z, UseDisposableItem
 	ret
 
-SuperRepelEffect:
-	ld b, 200
-	jr UseRepel
-
-MaxRepelEffect:
-	ld b, 250
-	jr UseRepel
-
 RepelEffect:
-	ld b, 100
-
-UseRepel:
+	ld b, 1
 	ld a, [wRepelEffect]
 	and a
-	ld hl, RepelUsedEarlierIsStillInEffectText
-	jp nz, PrintText
-
+	jr nz, .RepelisOn
 	ld a, b
 	ld [wRepelEffect], a
-	jp UseItemText
+	ld hl, RepelTurnOnText
+	jp PrintText
 
-RepelUsedEarlierIsStillInEffectText:
-	text_far _RepelUsedEarlierIsStillInEffectText
+.RepelisOn
+	xor a
+	ld [wRepelEffect], a
+	ld hl, RepelTurnOffText
+	jp PrintText
+
+RepelTurnOffText:
+	text_far _RepelTurnOffText
+	text_end
+
+RepelTurnOnText:
+	text_far _RepelTurnOnText
 	text_end
 
 XAccuracyEffect:
