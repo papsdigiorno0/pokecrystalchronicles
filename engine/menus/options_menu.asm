@@ -4,7 +4,7 @@
 	const OPT_BATTLE_SCENE  ; 1
 	const OPT_BATTLE_STYLE  ; 2
 	const OPT_SOUND         ; 3
-	const OPT_PRINT         ; 4
+	const OPT_REPEL         ; 4
 	const OPT_MENU_ACCOUNT  ; 5
 	const OPT_FRAME         ; 6
 	const OPT_CANCEL        ; 7
@@ -83,7 +83,7 @@ StringOptions:
 	db "        :<LF>"
 	db "SOUND<LF>"
 	db "        :<LF>"
-	db "PRINT<LF>"
+	db "REPEL<LF>"
 	db "        :<LF>"
 	db "MENU ACCOUNT<LF>"
 	db "        :<LF>"
@@ -100,7 +100,7 @@ GetOptionPointer:
 	dw Options_BattleScene
 	dw Options_BattleStyle
 	dw Options_Sound
-	dw Options_Print
+	dw Options_Repel
 	dw Options_MenuAccount
 	dw Options_Frame
 	dw Options_Cancel
@@ -452,6 +452,44 @@ Options_MenuAccount:
 
 .Off: db "OFF@"
 .On:  db "ON @"
+
+Options_Repel:
+ 	ld hl, wOptions2
+ 	ldh a, [hJoyPressed]
+ 	bit D_LEFT_F, a
+ 	jr nz, .LeftPressed
+ 	bit D_RIGHT_F, a
+ 	jr z, .NonePressed
+ 	bit REPEL_OPTION, [hl]
+ 	jr nz, .ToggleOff
+ 	jr .ToggleOn
+
+ .LeftPressed:
+ 	bit REPEL_OPTION, [hl]
+ 	jr z, .ToggleOn
+ 	jr .ToggleOff
+
+ .NonePressed:
+ 	bit REPEL_OPTION, [hl]
+ 	jr nz, .ToggleOn
+
+ .ToggleOff:
+ 	res REPEL_OPTION, [hl]
+ 	ld de, .Off
+ 	jr .Display
+
+ .ToggleOn:
+ 	set REPEL_OPTION, [hl]
+ 	ld de, .On
+
+ .Display:
+ 	hlcoord 11, 11
+ 	call PlaceString
+ 	and a
+ 	ret
+
+ .Off: db "OFF@"
+ .On:  db "ON @"
 
 Options_Frame:
 	ld hl, wTextboxFrame

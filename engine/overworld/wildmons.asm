@@ -372,9 +372,9 @@ ChooseWildEncounter:
 INCLUDE "data/wild/probabilities.asm"
 
 CheckRepelEffect::
-; If there is no active Repel, there's no need to be here.
-	ld a, [wRepelEffect]
-	and a
+; Repel option is set to off, there's no need to be here.
+	ld a, [wOptions2]
+	and 1 << REPEL_OPTION
 	jr z, .encounter
 ; Get the first Pokemon in your party that isn't fainted.
 	ld hl, wPartyMon1HP

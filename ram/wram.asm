@@ -1856,6 +1856,7 @@ wGBPrinterBrightness::
 	db
 wOptions2::
 ; bit 1: menu account off/on
+; bit 2: repel off/on
 	db
 	ds 2
 wOptionsEnd::
