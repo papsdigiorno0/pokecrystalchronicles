@@ -101,6 +101,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NoEggMoves2
+	dw MawileEggMoves
 .IndirectEnd::
 
 ChikoritaEggMoves:
@@ -467,4 +468,8 @@ LarvitarEggMoves:
 	dw FOCUS_ENERGY
 	dw ANCIENTPOWER
 NoEggMoves2:
+	dw -1 ; end
+
+MawileEggMoves:
+	dw PURSUIT
 	dw -1 ; end

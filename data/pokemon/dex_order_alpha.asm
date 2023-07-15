@@ -129,6 +129,7 @@ AlphabeticalPokedexOrder:
 	dw MAREEP
 	dw MARILL
 	dw MAROWAK
+	dw MAWILE
 	dw MEGANIUM
 	dw MEOWTH
 	dw METAPOD
