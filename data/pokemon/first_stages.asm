@@ -253,4 +253,5 @@ FirstEvoStages::
 	dw HO_OH
 	dw CELEBI
 	dw MAWILE
+	dw SABLEYE
 	assert_table_length NUM_POKEMON

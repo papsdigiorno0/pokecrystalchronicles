@@ -262,4 +262,5 @@ MonMenuIconPals:
 	icon_pals RED,    BROWN  ; HO_OH
 	icon_pals GREEN,  PINK   ; CELEBI
 	icon_pals GRAY,   PINK   ; MAWILE
+	icon_pals PURPLE, BROWN  ; SABLEYE
 	assert_table_length NUM_POKEMON

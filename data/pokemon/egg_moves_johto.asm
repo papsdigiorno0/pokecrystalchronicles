@@ -102,6 +102,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw MawileEggMoves
+	dw SableyeEggMoves
 .IndirectEnd::
 
 ChikoritaEggMoves:
@@ -471,5 +472,9 @@ NoEggMoves2:
 	dw -1 ; end
 
 MawileEggMoves:
+	dw PURSUIT
+	dw -1 ; end
+
+SableyeEggMoves:
 	dw PURSUIT
 	dw -1 ; end
