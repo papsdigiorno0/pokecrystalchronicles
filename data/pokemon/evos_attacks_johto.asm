@@ -103,6 +103,7 @@ EvosAttacksPointers2::
 	dw CelebiEvosAttacks
 	dw MawileEvosAttacks
 	dw SableyeEvosAttacks
+	dw Marowak_AEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -1432,4 +1433,22 @@ SableyeEvosAttacks:
 	dbw 42, MEAN_LOOK
 	dbw 47, SCREECH
 	dbw 52, MOONLIGHT
+	db 0 ; no more level-up moves
+
+Marowak_AEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, GROWL
+	dbw 1, TAIL_WHIP
+	dbw 1, BONE_CLUB
+	dbw 1, HEADBUTT
+	dbw 5, TAIL_WHIP
+	dbw 9, BONE_CLUB
+	dbw 13, HEADBUTT
+	dbw 17, LEER
+	dbw 21, FOCUS_ENERGY
+	dbw 25, BONEMERANG
+	dbw 32, RAGE
+	dbw 39, FALSE_SWIPE
+	dbw 46, THRASH
+	dbw 53, BONE_RUSH
 	db 0 ; no more level-up moves

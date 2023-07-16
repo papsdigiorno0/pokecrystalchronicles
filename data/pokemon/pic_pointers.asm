@@ -522,4 +522,6 @@ PokemonPicPointers::
 	dba MawileBackpic
 	dba SableyeFrontpic
 	dba SableyeBackpic
+	dba Marowak_AFrontpic
+	dba Marowak_ABackpic
 	assert_table_length NUM_POKEMON + 1

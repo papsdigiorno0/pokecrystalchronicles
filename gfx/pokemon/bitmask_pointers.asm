@@ -253,4 +253,5 @@ BitmasksPointers:
 	dw CelebiBitmasks
 	dw MawileBitmasks
 	dw SableyeBitmasks
+	dw Marowak_ABitmasks
 	assert_table_length NUM_POKEMON

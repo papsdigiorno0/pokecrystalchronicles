@@ -206,6 +206,7 @@ NewPokedexOrder:
 	dw RAPIDASH
 	dw CUBONE
 	dw MAROWAK
+	dw MAROWAK_A
 	dw KANGASKHAN
 	dw RHYHORN
 	dw RHYDON

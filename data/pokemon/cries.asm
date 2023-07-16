@@ -259,4 +259,5 @@ PokemonCries::
 	mon_cry CRY_ENTEI,       330,  273 ; CELEBI
 	mon_cry CRY_TOGETIC,      59,   56 ; MAWILE
 	mon_cry CRY_METAPOD,      32,  320 ; SABLEYE
+	mon_cry CRY_ODDISH,       79,  224 ; MAROWAK_A
 	assert_table_length NUM_POKEMON

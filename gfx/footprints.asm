@@ -254,7 +254,7 @@ INCBIN "gfx/footprints/ho_oh.1bpp"
 INCBIN "gfx/footprints/celebi.1bpp"
 INCBIN "gfx/footprints/mawile.1bpp"
 INCBIN "gfx/footprints/sableye.1bpp"
-INCBIN "gfx/footprints/254.1bpp"
+INCBIN "gfx/footprints/marowak_a.1bpp"
 INCBIN "gfx/footprints/255.1bpp"
 INCBIN "gfx/footprints/256.1bpp"
 
