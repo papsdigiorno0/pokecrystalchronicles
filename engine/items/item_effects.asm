@@ -58,7 +58,7 @@ ItemEffects:
 	dw NoEffect   				 ; SUPER_REPEL
 	dw NoEffect     		   ; MAX_REPEL
 	dw DireHitEffect       ; DIRE_HIT
-	dw NoEffect            ; ITEM_2D
+	dw EvoStoneEffect      ; LINK_CABLE
 	dw RestoreHPEffect     ; FRESH_WATER
 	dw RestoreHPEffect     ; SODA_POP
 	dw RestoreHPEffect     ; LEMONADE

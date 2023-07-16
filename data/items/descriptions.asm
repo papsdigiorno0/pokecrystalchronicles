@@ -45,7 +45,7 @@ ItemDescriptions:
 	dw SuperRepelDesc
 	dw MaxRepelDesc
 	dw DireHitDesc
-	dw QuestionMarkDesc
+	dw LinkCableDesc
 	dw FreshWaterDesc
 	dw SodaPopDesc
 	dw LemonadeDesc
@@ -430,6 +430,10 @@ MaxRepelDesc:
 DireHitDesc:
 	db   "Ups critical hit"
 	next "ratio. (1 BTL)@"
+
+LinkCableDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
 
 FreshWaterDesc:
 	db   "Restores #MON"
