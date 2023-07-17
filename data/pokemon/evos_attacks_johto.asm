@@ -104,6 +104,7 @@ EvosAttacksPointers2::
 	dw MawileEvosAttacks
 	dw SableyeEvosAttacks
 	dw Marowak_AEvosAttacks
+	dw Wooper_PEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -1451,4 +1452,17 @@ Marowak_AEvosAttacks:
 	dbw 39, FALSE_SWIPE
 	dbw 46, THRASH
 	dbw 53, BONE_RUSH
+	db 0 ; no more level-up moves
+
+Wooper_PEvosAttacks:
+	dbbw EVOLVE_LEVEL, 20, QUAGSIRE
+	db 0 ; no more evolutions
+	dbw 1, WATER_GUN
+	dbw 1, TAIL_WHIP
+	dbw 11, SLAM
+	dbw 21, AMNESIA
+	dbw 31, EARTHQUAKE
+	dbw 41, RAIN_DANCE
+	dbw 51, MIST
+	dbw 51, HAZE
 	db 0 ; no more level-up moves

@@ -264,4 +264,5 @@ MonMenuIconPals:
 	icon_pals GRAY,   PINK   ; MAWILE
 	icon_pals PURPLE, BROWN  ; SABLEYE
 	icon_pals GRAY,   TEAL   ; MAROWAK_A
+	icon_pals BROWN,  PURPLE ; WOOPER_P
 	assert_table_length NUM_POKEMON

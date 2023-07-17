@@ -254,4 +254,5 @@ AnimationIdlePointers:
 	dw MawileAnimationIdle
 	dw SableyeAnimationIdle
 	dw Marowak_AAnimationIdle
+	dw Wooper_PAnimationIdle
 	assert_table_length NUM_POKEMON

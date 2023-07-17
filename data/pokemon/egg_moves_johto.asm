@@ -104,6 +104,7 @@ EggMovePointers2::
 	dw MawileEggMoves
 	dw SableyeEggMoves
 	dw NoEggMoves2
+	dw Wooper_PEggMoves
 .IndirectEnd::
 
 ChikoritaEggMoves:
@@ -478,4 +479,10 @@ MawileEggMoves:
 
 SableyeEggMoves:
 	dw PURSUIT
+	dw -1 ; end
+
+Wooper_PEggMoves:
+	dw BODY_SLAM
+	dw ANCIENTPOWER
+	dw SAFEGUARD
 	dw -1 ; end

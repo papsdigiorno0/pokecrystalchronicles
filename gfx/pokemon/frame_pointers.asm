@@ -254,4 +254,5 @@ FramesPointers:
 	dba MawileFrames
 	dba SableyeFrames
 	dba Marowak_AFrames
+	dba Wooper_PFrames
 	assert_table_length NUM_POKEMON

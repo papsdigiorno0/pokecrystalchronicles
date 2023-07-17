@@ -58,6 +58,7 @@ NewPokedexOrder:
 	dw FLAAFFY
 	dw AMPHAROS
 	dw WOOPER
+	dw WOOPER_P
 	dw QUAGSIRE
 	dw GASTLY
 	dw HAUNTER

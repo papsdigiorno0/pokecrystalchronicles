@@ -259,4 +259,5 @@ IconPointers:
 	dw MawileIcon
 	dw SableyeIcon
 	dw Marowak_AIcon
+	dw Wooper_PIcon
 	assert_table_length NUM_POKEMON + 1

@@ -256,4 +256,5 @@ Pokered_MonIndices:
 	db MAWILE
 	db SABLEYE
 	db MAROWAK_A
+	db WOOPER_P
 	assert_table_length NUM_POKEMON + 1

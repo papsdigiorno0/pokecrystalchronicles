@@ -260,4 +260,5 @@ PokemonCries::
 	mon_cry CRY_TOGETIC,      59,   56 ; MAWILE
 	mon_cry CRY_METAPOD,      32,  320 ; SABLEYE
 	mon_cry CRY_ODDISH,       79,  224 ; MAROWAK_A
+	mon_cry CRY_WOOPER,      147,  175 ; WOOPER_P
 	assert_table_length NUM_POKEMON

@@ -273,7 +273,8 @@ DEF JOHTO_POKEMON EQU const_value
 	const CELEBI     ; fb
 	const MAWILE     ; fc
 	const SABLEYE    ; fd
-	const MAROWAK_A  ; fd
+	const MAROWAK_A  ; fe
+	const WOOPER_P   ; ff
 DEF NUM_POKEMON EQU const_value - 1
 
 DEF EGG EQU -3
