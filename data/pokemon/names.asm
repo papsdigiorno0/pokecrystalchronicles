@@ -257,5 +257,5 @@ PokemonNames::
 	db "CELEBI@@@@"
 	db "MAWILE@@@@"
 	db "SABLEYE@@@"
-	db "MAROWAKA@@"
+	db "MAROWAK-A@"
 	assert_table_length NUM_POKEMON
