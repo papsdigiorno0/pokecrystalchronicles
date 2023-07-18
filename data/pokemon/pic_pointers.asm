@@ -526,4 +526,6 @@ PokemonPicPointers::
 	dba Marowak_ABackpic
 	dba Wooper_PFrontpic
 	dba Wooper_PBackpic
+	dba ClodsireFrontpic
+	dba ClodsireBackpic
 	assert_table_length NUM_POKEMON + 1

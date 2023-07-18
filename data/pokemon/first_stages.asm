@@ -256,4 +256,5 @@ FirstEvoStages::
 	dw SABLEYE
 	dw CUBONE
 	dw WOOPER_P
+	dw WOOPER_P
 	assert_table_length NUM_POKEMON

@@ -31,6 +31,7 @@ AlphabeticalPokedexOrder:
 	dw CLEFABLE
 	dw CLEFAIRY
 	dw CLEFFA
+	dw CLODSIRE
 	dw CLOYSTER
 	dw CORSOLA
 	dw CROBAT

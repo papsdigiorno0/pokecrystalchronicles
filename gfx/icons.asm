@@ -260,4 +260,9 @@ MawileIcon::     INCBIN "gfx/icons/mawile.2bpp"
 SableyeIcon::    INCBIN "gfx/icons/sableye.2bpp"
 Marowak_AIcon::  INCBIN "gfx/icons/marowak_a.2bpp"
 Wooper_PIcon::   INCBIN "gfx/icons/wooper_p.2bpp"
+
+
+SECTION "Mon Icons 3", ROMX
+
+ClodsireIcon::   INCBIN "gfx/icons/clodsire.2bpp"
 EggIcon::        INCBIN "gfx/icons/egg.2bpp"

@@ -105,6 +105,7 @@ EggMovePointers2::
 	dw SableyeEggMoves
 	dw NoEggMoves2
 	dw Wooper_PEggMoves
+	dw NoEggMoves2
 .IndirectEnd::
 
 ChikoritaEggMoves:

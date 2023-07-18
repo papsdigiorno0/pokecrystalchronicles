@@ -60,6 +60,7 @@ NewPokedexOrder:
 	dw WOOPER
 	dw WOOPER_P
 	dw QUAGSIRE
+	dw CLODSIRE
 	dw GASTLY
 	dw HAUNTER
 	dw GENGAR

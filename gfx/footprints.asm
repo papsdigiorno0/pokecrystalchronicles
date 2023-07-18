@@ -256,6 +256,5 @@ INCBIN "gfx/footprints/mawile.1bpp"
 INCBIN "gfx/footprints/sableye.1bpp"
 INCBIN "gfx/footprints/marowak_a.1bpp"
 INCBIN "gfx/footprints/wooper_p.1bpp"
-INCBIN "gfx/footprints/256.1bpp"
-
+INCBIN "gfx/footprints/clodsire.1bpp"
 	assert_table_length $100

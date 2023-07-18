@@ -256,4 +256,5 @@ PokedexDataPointerTable:
 	dba SableyePokedexEntry
 	dba Marowak_APokedexEntry
 	dba Wooper_PPokedexEntry
+	dba ClodsirePokedexEntry
 	assert_table_length NUM_POKEMON

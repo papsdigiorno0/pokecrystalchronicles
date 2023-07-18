@@ -105,6 +105,7 @@ EvosAttacksPointers2::
 	dw SableyeEvosAttacks
 	dw Marowak_AEvosAttacks
 	dw Wooper_PEvosAttacks
+	dw ClodsireEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -1455,9 +1456,9 @@ Marowak_AEvosAttacks:
 	db 0 ; no more level-up moves
 
 Wooper_PEvosAttacks:
-	dbbw EVOLVE_LEVEL, 20, QUAGSIRE
+	dbbw EVOLVE_LEVEL, 20, CLODSIRE
 	db 0 ; no more evolutions
-	dbw 1, WATER_GUN
+	dbw 1, POISON_STING
 	dbw 1, TAIL_WHIP
 	dbw 11, SLAM
 	dbw 21, AMNESIA
@@ -1465,4 +1466,16 @@ Wooper_PEvosAttacks:
 	dbw 41, RAIN_DANCE
 	dbw 51, MIST
 	dbw 51, HAZE
+	db 0 ; no more level-up moves
+
+ClodsireEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, SLUDGE_BOMB
+	dbw 1, TAIL_WHIP
+	dbw 11, SLAM
+	dbw 23, AMNESIA
+	dbw 35, EARTHQUAKE
+	dbw 47, RAIN_DANCE
+	dbw 59, MIST
+	dbw 59, HAZE
 	db 0 ; no more level-up moves

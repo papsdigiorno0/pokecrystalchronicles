@@ -282,4 +282,5 @@ INCLUDE "data/pokemon/base_stats/mawile.asm"
 INCLUDE "data/pokemon/base_stats/sableye.asm"
 INCLUDE "data/pokemon/base_stats/marowak_a.asm"
 INCLUDE "data/pokemon/base_stats/wooper_p.asm"
+INCLUDE "data/pokemon/base_stats/clodsire.asm"
 .IndirectEnd::
