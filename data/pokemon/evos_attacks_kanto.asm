@@ -1543,6 +1543,7 @@ ExeggutorEvosAttacks:
 
 CuboneEvosAttacks:
 	dbbw EVOLVE_LEVEL, 28, MAROWAK
+	dbbw EVOLVE_ITEM, MALASADA, MAROWAK_A
 	db 0 ; no more evolutions
 	dbw 1, GROWL
 	dbw 5, TAIL_WHIP

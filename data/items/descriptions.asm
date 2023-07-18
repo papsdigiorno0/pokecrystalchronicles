@@ -90,7 +90,7 @@ ItemDescriptions:
 	dw BigMushroomDesc
 	dw SilverPowderDesc
 	dw BluApricornDesc
-	dw QuestionMarkDesc
+	dw MalasadaDesc
 	dw AmuletCoinDesc
 	dw YlwApricornDesc
 	dw GrnApricornDesc
@@ -927,3 +927,7 @@ MusicMailDesc:
 MirageMailDesc:
 	db   "MEW-print MAIL."
 	next "(HOLD)@"
+
+MalasadaDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
