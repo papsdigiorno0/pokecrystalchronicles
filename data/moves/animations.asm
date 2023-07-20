@@ -281,6 +281,7 @@ BattleAnimations::
 	dw BattleAnim_BeatUp
 	dw BattleAnim_Scald
 	dw BattleAnim_DragonPulse
+	dw BattleAnim_WillOWisp
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -4030,6 +4031,7 @@ BattleAnim_PainSplit:
 	anim_wait 1
 	anim_ret
 
+BattleAnim_WillOWisp:
 BattleAnim_SacredFire:
 	anim_1gfx ANIM_GFX_FIRE
 	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0

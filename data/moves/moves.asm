@@ -272,4 +272,5 @@ Moves1:
 	move EFFECT_BEAT_UP,            10, DARK,          100, 10,   0, PHYSICAL      ;BEAT_UP
 	move EFFECT_BURN_HIT,           80, WATER,         100, 15,  30, SPECIAL       ;SCALD
 	move EFFECT_NORMAL_HIT,         85, DRAGON,        100, 15,   0, SPECIAL       ;DRAGON_PULSE
+	move EFFECT_BURN_HIT,            0, FIRE,          100, 15,  85, STATUS        ;WILL_O_WISP
 .IndirectEnd::

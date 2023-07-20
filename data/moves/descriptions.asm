@@ -258,6 +258,7 @@ MoveDescriptions1:
 	dw BeatUpDescription
 	dw ScaldDescription
 	dw DragonPulseDescription
+	dw WillOWispDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1274,3 +1275,7 @@ ScaldDescription:
 DragonPulseDescription:
 	db   "Attack from user's"
 	next "gaping mouth.@"
+
+WillOWispDescription:
+	db   "Inflicts a burn"
+	next "with intense fire.@"
