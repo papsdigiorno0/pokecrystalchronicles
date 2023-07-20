@@ -12,12 +12,15 @@ SECTION "Enemy Trainer Parties 1", ROMX
 FalknerGroup:
 	next_list_item ; FALKNER (1)
 	db "FALKNER@", TRAINERTYPE_MOVES
-	db 7
+	db 12
 	dw PIDGEY
-	dw TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
-	db 9
-	dw PIDGEOTTO
-	dw TACKLE, MUD_SLAP, GUST, NO_MOVE
+	dw TACKLE, MUD_SLAP, GUST, QUICK_ATTACK
+	db 14
+	dw NATU
+	dw PECK, LEER, NIGHT_SHADE, CONFUSION
+	dw NOCTOWL
+	dw PECK, HYPNOSIS, TACKLE, GROWL
+	db 15
 	db -1 ; end
 
 	end_list_items
