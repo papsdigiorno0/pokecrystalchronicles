@@ -271,4 +271,5 @@ Moves1:
 	move EFFECT_TRAP_TARGET,        15, WATER,          70, 15,   0, SPECIAL       ;WHIRLPOOL
 	move EFFECT_BEAT_UP,            10, DARK,          100, 10,   0, PHYSICAL      ;BEAT_UP
 	move EFFECT_BURN_HIT,           80, WATER,         100, 15,  30, SPECIAL       ;SCALD
+	move EFFECT_NORMAL_HIT,         85, DRAGON,        100, 15,   0, SPECIAL       ;DRAGON_PULSE
 .IndirectEnd::

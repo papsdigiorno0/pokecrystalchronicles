@@ -257,6 +257,7 @@ MoveDescriptions1:
 	dw WhirlpoolDescription
 	dw BeatUpDescription
 	dw ScaldDescription
+	dw DragonPulseDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1269,3 +1270,7 @@ BeatUpDescription:
 ScaldDescription:
 	db   "Boiling water. May"
 	next "cause a burn.@"
+
+DragonPulseDescription:
+	db   "Attack from user's"
+	next "gaping mouth.@"

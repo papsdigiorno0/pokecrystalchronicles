@@ -252,4 +252,5 @@ MoveNames::
 	li "WHIRLPOOL"
 	li "BEAT UP"
 	li "SCALD"
+	li "DRAGON PULSE"
 	assert_list_length NUM_ATTACKS
