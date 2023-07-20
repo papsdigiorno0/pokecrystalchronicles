@@ -275,4 +275,5 @@ Moves1:
 	move EFFECT_BURN_HIT,            0, FIRE,          100, 15,  85, STATUS        ;WILL_O_WISP
 	move EFFECT_PRIORITY_HIT,       40, STEEL,         100, 30,   0, PHYSICAL      ;BULLET_PUNCH
 	move EFFECT_PRIORITY_HIT,       40, WATER,         100, 30,   0, PHYSICAL      ;AQUA_JET
+	move EFFECT_LEECH_HIT,          75, FIGHTING,      100, 15,   0, PHYSICAL      ;DRAIN_PUNCH
 .IndirectEnd::

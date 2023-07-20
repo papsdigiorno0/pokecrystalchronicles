@@ -256,4 +256,5 @@ MoveNames::
 	li "WILL-O-WISP"
 	li "BULLET PUNCH"
 	li "AQUA JET"
+	li "DRAIN PUNCH"
 	assert_list_length NUM_ATTACKS

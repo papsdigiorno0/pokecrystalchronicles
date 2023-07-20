@@ -284,6 +284,7 @@ BattleAnimations::
 	dw BattleAnim_WillOWisp
 	dw BattleAnim_BulletPunch
 	dw BattleAnim_AquaJet
+	dw BattleAnim_DrainPunch
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -699,6 +700,7 @@ BattleAnim_Doubleslap:
 	anim_wait 8
 	anim_ret
 
+BattleAnim_DrainPunch:
 BattleAnim_CometPunch:
 	anim_1gfx ANIM_GFX_HIT
 	anim_if_param_equal $1, .alternate
