@@ -260,6 +260,7 @@
 	const SCALD        ; fc
 	const DRAGON_PULSE ; fd
 	const WILL_O_WISP  ; fe
+	const BULLET_PUNCH ; ff
 DEF NUM_ATTACKS EQU const_value - 1
 
 	if NUM_ATTACKS > $3fff

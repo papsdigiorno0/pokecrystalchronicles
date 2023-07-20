@@ -259,6 +259,7 @@ MoveDescriptions1:
 	dw ScaldDescription
 	dw DragonPulseDescription
 	dw WillOWispDescription
+	dw BulletPunchDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1279,3 +1280,7 @@ DragonPulseDescription:
 WillOWispDescription:
 	db   "Inflicts a burn"
 	next "with intense fire.@"
+
+BulletPunchDescription:
+	db   "A fast punch that"
+	next "lands first.@"
