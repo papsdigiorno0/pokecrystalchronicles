@@ -274,4 +274,5 @@ Moves1:
 	move EFFECT_NORMAL_HIT,         85, DRAGON,        100, 15,   0, SPECIAL       ;DRAGON_PULSE
 	move EFFECT_BURN_HIT,            0, FIRE,          100, 15,  85, STATUS        ;WILL_O_WISP
 	move EFFECT_PRIORITY_HIT,       40, STEEL,         100, 30,   0, PHYSICAL      ;BULLET_PUNCH
+	move EFFECT_PRIORITY_HIT,       40, WATER,         100, 30,   0, PHYSICAL      ;AQUA_JET
 .IndirectEnd::

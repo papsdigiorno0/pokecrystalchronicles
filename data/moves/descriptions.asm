@@ -260,6 +260,7 @@ MoveDescriptions1:
 	dw DragonPulseDescription
 	dw WillOWispDescription
 	dw BulletPunchDescription
+	dw AquaJetDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1283,4 +1284,8 @@ WillOWispDescription:
 
 BulletPunchDescription:
 	db   "A fast punch that"
+	next "lands first.@"
+
+AquaJetDescription:
+	db   "A fast lunge that"
 	next "lands first.@"

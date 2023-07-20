@@ -255,4 +255,5 @@ MoveNames::
 	li "DRAGON PULSE"
 	li "WILL-O-WISP"
 	li "BULLET PUNCH"
+	li "AQUA JET"
 	assert_list_length NUM_ATTACKS

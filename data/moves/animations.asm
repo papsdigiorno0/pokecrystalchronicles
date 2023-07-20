@@ -283,6 +283,7 @@ BattleAnimations::
 	dw BattleAnim_DragonPulse
 	dw BattleAnim_WillOWisp
 	dw BattleAnim_BulletPunch
+	dw BattleAnim_AquaJet
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -3399,6 +3400,7 @@ BattleAnim_Protect:
 	anim_wait 96
 	anim_ret
 
+BattleAnim_AquaJet:
 BattleAnim_BulletPunch:
 BattleAnim_MachPunch:
 	anim_2gfx ANIM_GFX_SPEED, ANIM_GFX_HIT
