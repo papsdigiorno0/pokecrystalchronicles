@@ -285,6 +285,8 @@ BattleAnimations::
 	dw BattleAnim_BulletPunch
 	dw BattleAnim_AquaJet
 	dw BattleAnim_DrainPunch
+	dw BattleAnim_DisarmVoice
+	dw BattleAnim_Moonblast
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -4303,6 +4305,7 @@ BattleAnim_Crunch:
 	anim_wait 8
 	anim_ret
 
+BattleAnim_Moonblast:
 BattleAnim_Moonlight:
 	anim_1gfx ANIM_GFX_SHINE
 	anim_bgp $1b
@@ -4866,4 +4869,24 @@ BattleAnim_Scald:
 	anim_wait 4
 	anim_loop 3, .loop
 	anim_wait 6
+	anim_ret
+
+BattleAnim_DisarmVoice:
+	anim_1gfx ANIM_GFX_PSYCHIC
+	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $8, $1, $20
+	anim_sound 6, 2, SFX_METRONOME
+.loop
+	anim_obj ANIM_OBJ_WAVE,   8, 0,  11, 0, $2
+	anim_wait 2
+	anim_loop 2, .loop
+	anim_wait 48
+.loop2
+	anim_1gfx ANIM_GFX_OBJECTS
+	anim_obj ANIM_OBJ_HEART,   16, 0,   7, 0, $0
+	anim_sound 0, 0, SFX_SWEET_KISS
+	anim_wait 24
+	anim_sound 0, 0, SFX_SWEET_KISS
+	anim_obj ANIM_OBJ_HEART,   16, 12,   7, 0, $0
+	anim_loop 2, .loop2
+	anim_wait 32
 	anim_ret

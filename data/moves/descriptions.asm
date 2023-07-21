@@ -262,6 +262,8 @@ MoveDescriptions1:
 	dw BulletPunchDescription
 	dw AquaJetDescription
 	dw DrainPunchDescription
+	dw DisarmVoiceDescription
+	dw MoonblastDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1294,3 +1296,11 @@ AquaJetDescription:
 DrainPunchDescription:
 	db   "A punch that"
 	next "restores HP.@"
+
+DisarmVoiceDescription:
+	db   "A charming cry"
+	next "that never misses.@"
+
+MoonblastDescription:
+	db   "Power from moon"
+	next "may lower SP.ATK.@"

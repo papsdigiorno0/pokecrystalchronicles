@@ -276,4 +276,6 @@ Moves1:
 	move EFFECT_PRIORITY_HIT,       40, STEEL,         100, 30,   0, PHYSICAL      ;BULLET_PUNCH
 	move EFFECT_PRIORITY_HIT,       40, WATER,         100, 30,   0, PHYSICAL      ;AQUA_JET
 	move EFFECT_LEECH_HIT,          75, FIGHTING,      100, 15,   0, PHYSICAL      ;DRAIN_PUNCH
+	move EFFECT_ALWAYS_HIT,         40, FAIRY,         100, 30,   0, SPECIAL       ;DISARM_VOICE
+	move EFFECT_SP_ATK_DOWN_HIT,    95, FAIRY,         100, 15,  30, SPECIAL       ;MOONBLAST
 .IndirectEnd::

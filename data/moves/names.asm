@@ -257,4 +257,6 @@ MoveNames::
 	li "BULLET PUNCH"
 	li "AQUA JET"
 	li "DRAIN PUNCH"
+	li "DISARM VOICE"
+	li "MOONBLAST"
 	assert_list_length NUM_ATTACKS
