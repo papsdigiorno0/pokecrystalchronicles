@@ -264,6 +264,7 @@ MoveDescriptions1:
 	dw DrainPunchDescription
 	dw DisarmVoiceDescription
 	dw MoonblastDescription
+	dw DrainKissDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1304,3 +1305,7 @@ DisarmVoiceDescription:
 MoonblastDescription:
 	db   "Power from moon"
 	next "may lower SP.ATK.@"
+
+DrainKissDescription:
+	db   "Steals target's HP"
+	next "with a kiss.@"

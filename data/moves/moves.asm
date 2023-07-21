@@ -278,4 +278,5 @@ Moves1:
 	move EFFECT_LEECH_HIT,          75, FIGHTING,      100, 15,   0, PHYSICAL      ;DRAIN_PUNCH
 	move EFFECT_ALWAYS_HIT,         40, FAIRY,         100, 30,   0, SPECIAL       ;DISARM_VOICE
 	move EFFECT_SP_ATK_DOWN_HIT,    95, FAIRY,         100, 15,  30, SPECIAL       ;MOONBLAST
+	move EFFECT_LEECH_HIT,          50, FAIRY,         100, 30,   0, SPECIAL       ;DRAIN_KISS
 .IndirectEnd::
