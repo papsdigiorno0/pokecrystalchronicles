@@ -528,4 +528,6 @@ PokemonPicPointers::
 	dba Wooper_PBackpic
 	dba ClodsireFrontpic
 	dba ClodsireBackpic
+	dba WeavileFrontpic
+	dba WeavileBackpic
 	assert_table_length NUM_POKEMON + 1

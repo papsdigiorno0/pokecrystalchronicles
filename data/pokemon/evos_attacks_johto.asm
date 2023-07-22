@@ -106,6 +106,7 @@ EvosAttacksPointers2::
 	dw Marowak_AEvosAttacks
 	dw Wooper_PEvosAttacks
 	dw ClodsireEvosAttacks
+	dw WeavileEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -1478,4 +1479,18 @@ ClodsireEvosAttacks:
 	dbw 47, RAIN_DANCE
 	dbw 59, MIST
 	dbw 59, HAZE
+	db 0 ; no more level-up moves
+
+WeavileEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, SCRATCH
+	dbw 1, LEER
+	dbw 9, QUICK_ATTACK
+	dbw 17, SCREECH
+	dbw 25, FAINT_ATTACK
+	dbw 33, FURY_SWIPES
+	dbw 41, AGILITY
+	dbw 49, SLASH
+	dbw 57, BEAT_UP
+	dbw 65, METAL_CLAW
 	db 0 ; no more level-up moves

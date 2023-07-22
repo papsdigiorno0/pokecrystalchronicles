@@ -276,6 +276,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const MAROWAK_A  ; fe
 	const WOOPER_P   ; ff
 	const CLODSIRE   ; g0
+	const WEAVILE    ; g1
 DEF NUM_POKEMON EQU const_value - 1
 
 DEF EGG EQU -3

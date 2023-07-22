@@ -265,4 +265,5 @@ Wooper_PIcon::   INCBIN "gfx/icons/wooper_p.2bpp"
 SECTION "Mon Icons 3", ROMX
 
 ClodsireIcon::   INCBIN "gfx/icons/clodsire.2bpp"
+WeavileIcon::    INCBIN "gfx/icons/weavile.2bpp"
 EggIcon::        INCBIN "gfx/icons/egg.2bpp"

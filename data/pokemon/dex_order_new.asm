@@ -218,6 +218,7 @@ NewPokedexOrder:
 	dw SLUGMA
 	dw MAGCARGO
 	dw SNEASEL
+	dw WEAVILE
 	dw MISDREAVUS
 	dw PORYGON
 	dw PORYGON2

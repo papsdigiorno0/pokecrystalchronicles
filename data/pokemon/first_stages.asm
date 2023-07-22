@@ -257,4 +257,5 @@ FirstEvoStages::
 	dw CUBONE
 	dw WOOPER_P
 	dw WOOPER_P
+	dw SNEASEL
 	assert_table_length NUM_POKEMON

@@ -262,4 +262,5 @@ PokemonCries::
 	mon_cry CRY_ODDISH,       79,  224 ; MAROWAK_A
 	mon_cry CRY_WOOPER,      147,  175 ; WOOPER_P
 	mon_cry CRY_WOOPER,     -198,  320 ; CLODSIRE
+	mon_cry CRY_WOOPER,       83,  175 ; WEAVILE
 	assert_table_length NUM_POKEMON

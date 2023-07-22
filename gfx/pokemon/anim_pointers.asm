@@ -256,4 +256,5 @@ AnimationPointers:
 	dw Marowak_AAnimation
 	dw Wooper_PAnimation
 	dw ClodsireAnimation
+	dw WeavileAnimation
 	assert_table_length NUM_POKEMON
