@@ -265,6 +265,7 @@ MoveDescriptions1:
 	dw DisarmVoiceDescription
 	dw MoonblastDescription
 	dw DrainKissDescription
+	dw LeafBladeDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1309,3 +1310,7 @@ MoonblastDescription:
 DrainKissDescription:
 	db   "Steals target's HP"
 	next "with a kiss.@"
+
+LeafBladeDescription:
+	db   "Has a high criti-"
+	next "cal hit ratio.@"

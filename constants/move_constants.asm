@@ -266,6 +266,7 @@
 	const DISARM_VOICE
 	const MOONBLAST
 	const DRAIN_KISS
+	const LEAF_BLADE
 DEF NUM_ATTACKS EQU const_value - 1
 
 	if NUM_ATTACKS > $3fff

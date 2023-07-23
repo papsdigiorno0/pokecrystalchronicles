@@ -288,6 +288,7 @@ BattleAnimations::
 	dw BattleAnim_DisarmVoice
 	dw BattleAnim_Moonblast
 	dw BattleAnim_DrainKiss
+	dw BattleAnim_LeafBlade
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -306,6 +307,28 @@ BattleAnim_SweetScent2:
 	anim_obj ANIM_OBJ_COTTON, 136, 40, $3f
 	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
 	anim_wait 128
+	anim_ret
+
+BattleAnim_LeafBlade:
+	anim_2gfx ANIM_GFX_CUT, ANIM_GFX_PLANT
+	anim_sound 0, 1, SFX_CUT
+	anim_bgeffect ANIM_BG_1F, $08, $2, $0
+	anim_obj ANIM_OBJ_3A, 150, 40, $0
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 40, $28
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 40, $d0
+	anim_wait 32
+	anim_sound 0, 1, SFX_CUT
+	anim_bgeffect ANIM_BG_1F, $08, $2, $0
+	anim_obj ANIM_OBJ_3B, 118, 40, $0
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 40, $10
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 40, $dc
+	anim_wait 32
+	anim_sound 0, 1, SFX_CUT
+	anim_bgeffect ANIM_BG_1F, $08, $2, $0
+	anim_obj ANIM_OBJ_3A, 150, 40, $0
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 40, $5c
+	anim_obj ANIM_OBJ_RAZOR_LEAF, 136, 40, $90
+	anim_wait 32
 	anim_ret
 
 BattleAnim_ThrowPokeBall:

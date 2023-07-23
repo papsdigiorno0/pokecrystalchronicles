@@ -279,4 +279,5 @@ Moves1:
 	move EFFECT_ALWAYS_HIT,         40, FAIRY,         100, 30,   0, SPECIAL       ;DISARM_VOICE
 	move EFFECT_SP_ATK_DOWN_HIT,    95, FAIRY,         100, 15,  30, SPECIAL       ;MOONBLAST
 	move EFFECT_LEECH_HIT,          50, FAIRY,         100, 30,   0, SPECIAL       ;DRAIN_KISS
+	move EFFECT_NORMAL_HIT,         90, GRASS,         100, 15,   0, PHYSICAL      ;LEAF_BLADE
 .IndirectEnd::

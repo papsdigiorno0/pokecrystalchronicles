@@ -260,4 +260,5 @@ MoveNames::
 	li "DISARM VOICE"
 	li "MOONBLAST"
 	li "DRAIN KISS"
+	li "LEAF BLADE"
 	assert_list_length NUM_ATTACKS
