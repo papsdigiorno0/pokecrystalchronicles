@@ -48,6 +48,8 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass CHUCK ; 7
 	const CHUCK1
+	const CHUCK2
+	const CHUCK3
 
 	trainerclass CLAIR ; 8
 	const CLAIR1
@@ -526,12 +528,20 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass BLACKBELT_T ; 32
 	const KENJI1 ; unused
-	const YOSHI
+	const YOSHI1
+	const YOSHI2
+	const YOSHI3
 	const KENJI2 ; unused
-	const LAO
-	const NOB
+	const LAO1
+	const LAO2
+	const LAO3
+	const NOB1
+	const NOB2
+	const NOB3
 	const KIYO
-	const LUNG
+	const LUNG1
+	const LUNG2
+	const LUNG3
 	const KENJI3
 	const WAI
 

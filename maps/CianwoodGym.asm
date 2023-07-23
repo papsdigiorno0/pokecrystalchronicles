@@ -38,7 +38,12 @@ CianwoodGymChuckScript:
 	waitbutton
 	closetext
 	winlosstext ChuckLossText, 0
+	readvar VAR_BADGES
+	ifequal 6, .SixBadgesBattle
+	ifequal 5, .FiveBadgesBattle
+; At least 4 Johto badges.
 	loadtrainer CHUCK, CHUCK1
+.StartGymBattle:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_CHUCK
@@ -56,7 +61,15 @@ CianwoodGymChuckScript:
 	setevent EVENT_BEAT_BLACKBELT_LAO
 	setevent EVENT_BEAT_BLACKBELT_NOB
 	setevent EVENT_BEAT_BLACKBELT_LUNG
+	readvar VAR_BADGES
+	getnum STRING_BUFFER_3
+	ifequal 5, .GotFifthBadge
+	ifequal 6, .GotSixthBadge
+	writetext ChuckPlayerGotSeventhBadge
+.continue
 	writetext ChuckExplainBadgeText
+.continue2
+	writetext ChuckHereTakeThisToo
 	promptbutton
 	verbosegiveitem TM_DYNAMICPUNCH
 	iffalse .BagFull
@@ -65,6 +78,22 @@ CianwoodGymChuckScript:
 	waitbutton
 	closetext
 	end
+
+.GotFifthBadge:
+	writetext ChuckPlayerGotFifthBadge
+	sjump .continue
+
+.GotSixthBadge:
+	writetext SixthBadge_ChuckExplainBadgeText
+	sjump .continue2
+
+.SixBadgesBattle:
+	loadtrainer CHUCK, CHUCK3
+	sjump .StartGymBattle
+
+.FiveBadgesBattle:
+	loadtrainer CHUCK, CHUCK2
+	sjump .StartGymBattle
 
 .AlreadyGotTM:
 	writetext ChuckAfterText
@@ -85,7 +114,17 @@ CianwoodGymActivateRockets:
 	jumpstd RadioTowerRocketsScript
 
 TrainerBlackbeltYoshi:
-	trainer BLACKBELT_T, YOSHI, EVENT_BEAT_BLACKBELT_YOSHI, BlackbeltYoshiSeenText, BlackbeltYoshiBeatenText, 0, .Script
+	readvar VAR_BADGES
+	ifequal 6, .SixBadgesBattle
+	ifequal 5, .FiveBadgesBattle
+	; At least 4 Johto Badges
+	trainer BLACKBELT_T, YOSHI1, EVENT_BEAT_BLACKBELT_YOSHI, BlackbeltYoshiSeenText, BlackbeltYoshiBeatenText, 0, .Script
+
+.SixBadgesBattle:
+		trainer BLACKBELT_T, YOSHI3, EVENT_BEAT_BLACKBELT_YOSHI, BlackbeltYoshiSeenText, BlackbeltYoshiBeatenText, 0, .Script
+
+.FiveBadgesBattle:
+		trainer BLACKBELT_T, YOSHI2, EVENT_BEAT_BLACKBELT_YOSHI, BlackbeltYoshiSeenText, BlackbeltYoshiBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -96,7 +135,17 @@ TrainerBlackbeltYoshi:
 	end
 
 TrainerBlackbeltLao:
-	trainer BLACKBELT_T, LAO, EVENT_BEAT_BLACKBELT_LAO, BlackbeltLaoSeenText, BlackbeltLaoBeatenText, 0, .Script
+	readvar VAR_BADGES
+	ifequal 6, .SixBadgesBattle
+	ifequal 5, .FiveBadgesBattle
+	; At least 4 Johto Badges
+	trainer BLACKBELT_T, LAO1, EVENT_BEAT_BLACKBELT_LAO, BlackbeltLaoSeenText, BlackbeltLaoBeatenText, 0, .Script
+
+.SixBadgesBattle:
+	trainer BLACKBELT_T, LAO3, EVENT_BEAT_BLACKBELT_LAO, BlackbeltLaoSeenText, BlackbeltLaoBeatenText, 0, .Script
+
+.FiveBadgesBattle:
+	trainer BLACKBELT_T, LAO2, EVENT_BEAT_BLACKBELT_LAO, BlackbeltLaoSeenText, BlackbeltLaoBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -107,7 +156,17 @@ TrainerBlackbeltLao:
 	end
 
 TrainerBlackbeltNob:
-	trainer BLACKBELT_T, NOB, EVENT_BEAT_BLACKBELT_NOB, BlackbeltNobSeenText, BlackbeltNobBeatenText, 0, .Script
+	readvar VAR_BADGES
+	ifequal 6, .SixBadgesBattle
+	ifequal 5, .FiveBadgesBattle
+	; At least 4 Johto Badges
+	trainer BLACKBELT_T, NOB1, EVENT_BEAT_BLACKBELT_NOB, BlackbeltNobSeenText, BlackbeltNobBeatenText, 0, .Script
+
+.SixBadgesBattle:
+	trainer BLACKBELT_T, NOB3, EVENT_BEAT_BLACKBELT_NOB, BlackbeltNobSeenText, BlackbeltNobBeatenText, 0, .Script
+
+.FiveBadgesBattle:
+	trainer BLACKBELT_T, NOB2, EVENT_BEAT_BLACKBELT_NOB, BlackbeltNobSeenText, BlackbeltNobBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -118,7 +177,17 @@ TrainerBlackbeltNob:
 	end
 
 TrainerBlackbeltLung:
-	trainer BLACKBELT_T, LUNG, EVENT_BEAT_BLACKBELT_LUNG, BlackbeltLungSeenText, BlackbeltLungBeatenText, 0, .Script
+	readvar VAR_BADGES
+	ifequal 6, .SixBadgesBattle
+	ifequal 5, .FiveBadgesBattle
+	; At least 4 Johto Badges
+	trainer BLACKBELT_T, LUNG1, EVENT_BEAT_BLACKBELT_LUNG, BlackbeltLungSeenText, BlackbeltLungBeatenText, 0, .Script
+
+.SixBadgesBattle:
+		trainer BLACKBELT_T, LUNG3, EVENT_BEAT_BLACKBELT_LUNG, BlackbeltLungSeenText, BlackbeltLungBeatenText, 0, .Script
+
+.FiveBadgesBattle:
+		trainer BLACKBELT_T, LUNG2, EVENT_BEAT_BLACKBELT_LUNG, BlackbeltLungSeenText, BlackbeltLungBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -198,6 +267,33 @@ GetStormBadgeText:
 	line "STORMBADGE."
 	done
 
+ChuckPlayerGotFifthBadge:
+	text "The Storm Badge"
+	line "makes all #mon"
+
+	para "up to Lv. 40 obey,"
+	line "even traded ones."
+	done
+
+ChuckPlayerGotSeventhBadge:
+	text "The Storm Badge"
+	line "makes all #mon"
+
+	para "up to Lv. 45 obey,"
+	line "even traded ones."
+	done
+
+SixthBadge_ChuckExplainBadgeText:
+	text "The Storm Badge"
+	line "lets your #mon"
+
+	para "use Fly to any"
+	line "city or town you"
+
+	para "have already been"
+	line "to!"
+	done
+
 ChuckExplainBadgeText:
 	text "STORMBADGE makes"
 	line "all #MON up to"
@@ -212,6 +308,11 @@ ChuckExplainBadgeText:
 	line "a battle."
 
 	para "Here, take this"
+	line "too!"
+	done
+
+ChuckHereTakeThisToo:
+	text "Here, take this,"
 	line "too!"
 	done
 
