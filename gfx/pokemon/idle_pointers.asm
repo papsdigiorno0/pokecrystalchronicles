@@ -257,4 +257,5 @@ AnimationIdlePointers:
 	dw Wooper_PAnimationIdle
 	dw ClodsireAnimationIdle
 	dw WeavileAnimationIdle
+	dw OreonAnimationIdle
 	assert_table_length NUM_POKEMON

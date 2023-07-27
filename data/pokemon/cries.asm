@@ -263,4 +263,5 @@ PokemonCries::
 	mon_cry CRY_WOOPER,      147,  175 ; WOOPER_P
 	mon_cry CRY_WOOPER,     -198,  320 ; CLODSIRE
 	mon_cry CRY_WOOPER,       83,  175 ; WEAVILE
+	mon_cry CRY_VENONAT,    -233,  240 ; OREON
 	assert_table_length NUM_POKEMON

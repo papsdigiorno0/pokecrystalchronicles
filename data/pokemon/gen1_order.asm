@@ -259,4 +259,5 @@ Pokered_MonIndices:
 	db WOOPER_P
 	db CLODSIRE
 	db WEAVILE
+	db OREON
 	assert_table_length NUM_POKEMON + 1

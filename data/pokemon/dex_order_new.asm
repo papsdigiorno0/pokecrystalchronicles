@@ -189,6 +189,7 @@ NewPokedexOrder:
 	dw FLAREON
 	dw ESPEON
 	dw UMBREON
+	dw OREON
 	dw HORSEA
 	dw SEADRA
 	dw KINGDRA

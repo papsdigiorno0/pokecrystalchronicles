@@ -157,6 +157,7 @@ AlphabeticalPokedexOrder:
 	dw OMANYTE
 	dw OMASTAR
 	dw ONIX
+	dw OREON
 	dw PARAS
 	dw PARASECT
 	dw PERSIAN

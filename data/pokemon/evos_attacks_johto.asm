@@ -107,6 +107,7 @@ EvosAttacksPointers2::
 	dw Wooper_PEvosAttacks
 	dw ClodsireEvosAttacks
 	dw WeavileEvosAttacks
+	dw OreonEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -1493,4 +1494,18 @@ WeavileEvosAttacks:
 	dbw 49, SLASH
 	dbw 57, BEAT_UP
 	dbw 65, METAL_CLAW
+	db 0 ; no more level-up moves
+
+OreonEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, TAIL_WHIP
+	dbw 8, SAND_ATTACK
+	dbw 16, PURSUIT
+	dbw 23, QUICK_ATTACK
+	dbw 30, CONFUSE_RAY
+	dbw 36, FAINT_ATTACK
+	dbw 42, MEAN_LOOK
+	dbw 47, SCREECH
+	dbw 52, MOONLIGHT
 	db 0 ; no more level-up moves

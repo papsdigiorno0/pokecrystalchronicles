@@ -267,4 +267,5 @@ MonMenuIconPals:
 	icon_pals BROWN,  PURPLE ; WOOPER_P
 	icon_pals BROWN,  PURPLE ; CLODSIRE
 	icon_pals RED,    PURPLE ; WEAVILE
+	icon_pals BROWN,  BLUE   ; OREON
 	assert_table_length NUM_POKEMON

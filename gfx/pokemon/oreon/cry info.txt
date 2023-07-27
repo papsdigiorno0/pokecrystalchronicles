@@ -1,0 +1,2 @@
+put this into cries.asm
+	mon_cry CRY_AIPOM,       $8c0,  $195 ; OREON
