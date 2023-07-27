@@ -278,6 +278,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const CLODSIRE   ; g0
 	const WEAVILE    ; g1
 	const OREON      ; g2
+	const HONCHKROW  ; g3
 DEF NUM_POKEMON EQU const_value - 1
 
 DEF EGG EQU -3

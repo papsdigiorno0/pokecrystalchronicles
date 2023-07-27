@@ -259,4 +259,5 @@ FirstEvoStages::
 	dw WOOPER_P
 	dw SNEASEL
 	dw EEVEE
+	dw MURKROW
 	assert_table_length NUM_POKEMON

@@ -257,11 +257,12 @@ PokemonCries::
 	mon_cry CRY_TYPHLOSION,    0,  256 ; LUGIA
 	mon_cry CRY_AIPOM,         0,  384 ; HO_OH
 	mon_cry CRY_ENTEI,       330,  273 ; CELEBI
-	mon_cry CRY_TOGETIC,      59,   56 ; MAWILE
-	mon_cry CRY_METAPOD,      32,  320 ; SABLEYE
+	mon_cry CRY_TOGETIC,       0,  256 ; MAWILE
+	mon_cry CRY_METAPOD,     102,  145 ; SABLEYE
 	mon_cry CRY_ODDISH,       79,  224 ; MAROWAK_A
 	mon_cry CRY_WOOPER,      147,  175 ; WOOPER_P
 	mon_cry CRY_WOOPER,     -198,  320 ; CLODSIRE
-	mon_cry CRY_WOOPER,       83,  175 ; WEAVILE
+	mon_cry CRY_WOOPER,        0,  192 ; WEAVILE
 	mon_cry CRY_VENONAT,    -233,  240 ; OREON
+	mon_cry CRY_MARILL,     -183,  320 ; HONCHKROW
 	assert_table_length NUM_POKEMON

@@ -290,4 +290,5 @@ INCLUDE "data/pokemon/base_stats/wooper_p.asm"
 INCLUDE "data/pokemon/base_stats/clodsire.asm"
 INCLUDE "data/pokemon/base_stats/weavile.asm"
 INCLUDE "data/pokemon/base_stats/oreon.asm"
+INCLUDE "data/pokemon/base_stats/honchkrow.asm"
 .IndirectEnd::

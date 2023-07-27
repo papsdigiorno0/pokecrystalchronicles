@@ -258,4 +258,5 @@ BitmasksPointers:
 	dw ClodsireBitmasks
 	dw WeavileBitmasks
 	dw OreonBitmasks
+	dw HonchkrowBitmasks
 	assert_table_length NUM_POKEMON

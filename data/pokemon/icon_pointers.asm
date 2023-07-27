@@ -263,4 +263,5 @@ IconPointers:
 	dw ClodsireIcon
 	dw WeavileIcon
 	dw OreonIcon
+	dw HonchkrowIcon
 	assert_table_length NUM_POKEMON + 1

@@ -532,4 +532,6 @@ PokemonPicPointers::
 	dba WeavileBackpic
 	dba OreonFrontpic
 	dba OreonBackpic
+	dba HonchkrowFrontpic
+	dba HonchkrowBackpic
 	assert_table_length NUM_POKEMON + 1

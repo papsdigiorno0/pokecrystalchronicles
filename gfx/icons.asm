@@ -267,4 +267,5 @@ SECTION "Mon Icons 3", ROMX
 ClodsireIcon::   INCBIN "gfx/icons/clodsire.2bpp"
 WeavileIcon::    INCBIN "gfx/icons/weavile.2bpp"
 OreonIcon::      INCBIN "gfx/icons/oreon.2bpp"
+HonchkrowIcon::  INCBIN "gfx/icons/murkrow.2bpp"
 EggIcon::        INCBIN "gfx/icons/egg.2bpp"
