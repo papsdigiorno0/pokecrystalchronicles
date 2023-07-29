@@ -197,6 +197,7 @@ NewPokedexOrder:
 	dw DELIBIRD
 	dw SWINUB
 	dw PILOSWINE
+	dw MAMOSWINE
 	dw TEDDIURSA
 	dw URSARING
 	dw PHANPY

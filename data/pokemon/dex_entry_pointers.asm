@@ -260,4 +260,5 @@ PokedexDataPointerTable:
 	dba WeavilePokedexEntry
 	dba OreonPokedexEntry
 	dba HonchkrowPokedexEntry
+	dba MamoswinePokedexEntry
 	assert_table_length NUM_POKEMON

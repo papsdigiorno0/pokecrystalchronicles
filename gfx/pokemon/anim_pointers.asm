@@ -259,4 +259,5 @@ AnimationPointers:
 	dw WeavileAnimation
 	dw OreonAnimation
 	dw HonchkrowAnimation
+	dw MamoswineAnimation
 	assert_table_length NUM_POKEMON

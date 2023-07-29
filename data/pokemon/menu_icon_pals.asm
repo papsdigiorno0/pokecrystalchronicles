@@ -269,4 +269,5 @@ MonMenuIconPals:
 	icon_pals RED,    PURPLE ; WEAVILE
 	icon_pals BROWN,  BLUE   ; OREON
 	icon_pals BLUE,   PURPLE ; HONCHKROW
+	icon_pals BROWN,  BROWN  ; MAMOSWINE
 	assert_table_length NUM_POKEMON

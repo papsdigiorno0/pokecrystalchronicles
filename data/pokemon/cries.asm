@@ -265,4 +265,5 @@ PokemonCries::
 	mon_cry CRY_WOOPER,        0,  192 ; WEAVILE
 	mon_cry CRY_VENONAT,    -233,  240 ; OREON
 	mon_cry CRY_MARILL,     -183,  320 ; HONCHKROW
+	mon_cry CRY_BULBASAUR,   128,  129 ; MAMOSWINE
 	assert_table_length NUM_POKEMON

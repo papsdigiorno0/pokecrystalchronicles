@@ -109,6 +109,7 @@ EvosAttacksPointers2::
 	dw WeavileEvosAttacks
 	dw OreonEvosAttacks
 	dw HonchkrowEvosAttacks
+	dw MamoswineEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -1519,4 +1520,18 @@ HonchkrowEvosAttacks:
 	dbw 26, NIGHT_SHADE
 	dbw 31, FAINT_ATTACK
 	dbw 41, MEAN_LOOK
+	db 0 ; no more level-up moves
+
+MamoswineEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, HORN_ATTACK
+	dbw 1, POWDER_SNOW
+	dbw 1, ENDURE
+	dbw 10, POWDER_SNOW
+	dbw 19, ENDURE
+	dbw 28, TAKE_DOWN
+	dbw 33, FURY_ATTACK
+	dbw 42, MIST
+	dbw 56, BLIZZARD
+	dbw 70, AMNESIA
 	db 0 ; no more level-up moves
