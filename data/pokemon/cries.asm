@@ -266,4 +266,5 @@ PokemonCries::
 	mon_cry CRY_VENONAT,    -233,  240 ; OREON
 	mon_cry CRY_MARILL,     -183,  320 ; HONCHKROW
 	mon_cry CRY_BULBASAUR,   128,  129 ; MAMOSWINE
+	mon_cry CRY_TOGETIC,      96,   72 ; TOGEKISS
 	assert_table_length NUM_POKEMON

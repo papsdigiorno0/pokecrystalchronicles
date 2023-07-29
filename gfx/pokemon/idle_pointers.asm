@@ -260,4 +260,5 @@ AnimationIdlePointers:
 	dw OreonAnimationIdle
 	dw HonchkrowAnimationIdle
 	dw MamoswineAnimationIdle
+	dw TogekissAnimationIdle
 	assert_table_length NUM_POKEMON

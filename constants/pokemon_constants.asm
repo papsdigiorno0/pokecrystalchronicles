@@ -280,6 +280,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const OREON      ; g2
 	const HONCHKROW  ; g3
 	const MAMOSWINE  ; g4
+	const TOGEKISS   ; g5
 DEF NUM_POKEMON EQU const_value - 1
 
 DEF EGG EQU -3

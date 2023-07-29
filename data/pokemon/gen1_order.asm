@@ -262,4 +262,5 @@ Pokered_MonIndices:
 	db OREON
 	db HONCHKROW
 	db MAMOSWINE
+	db TOGEKISS
 	assert_table_length NUM_POKEMON + 1

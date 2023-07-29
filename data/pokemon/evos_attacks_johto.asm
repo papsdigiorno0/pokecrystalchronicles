@@ -110,6 +110,7 @@ EvosAttacksPointers2::
 	dw OreonEvosAttacks
 	dw HonchkrowEvosAttacks
 	dw MamoswineEvosAttacks
+	dw TogekissEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -1534,4 +1535,15 @@ MamoswineEvosAttacks:
 	dbw 42, MIST
 	dbw 56, BLIZZARD
 	dbw 70, AMNESIA
+	db 0 ; no more level-up moves
+
+TogekissEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, GROWL
+	dbw 1, CHARM
+	dbw 7, METRONOME
+	dbw 18, SWEET_KISS
+	dbw 25, ENCORE
+	dbw 31, SAFEGUARD
+	dbw 38, DOUBLE_EDGE
 	db 0 ; no more level-up moves
